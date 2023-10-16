@@ -1,5 +1,8 @@
 # interactive-coding-quiz
-Challenge Module for week 4 of the coding bootcamp.
+This project is an interactive coding quiz that uses logic from JavaScript to dynamically update the 
+html page, receive and respond to user input, and stores persistent data locally to the browser. Users can 
+test their knowledge of the script language and save their scores for progress checking, and competing with 
+their peers!
 
 ### User Story
 ```md
