@@ -1,0 +1,96 @@
+* {
+    color: #1e395e; /* Dark blue paragraph text color */
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+/* style.css */
+
+body {
+    background-color: #4979ff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+}
+
+#hiScore {
+    color: #6d0000; /* Dark blue text color */
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    display: block;
+}
+#timer {
+    font-size: 100px;
+}
+
+#quizHome {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 75%;
+}
+
+h1 {
+    color: #000000; /* Royal blue heading text color */
+    font-size: 75px;
+}
+
+
+#start-btn {
+    background-color: #1976D2; /* Royal blue button background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#testingPage {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 75%;
+}
+
+#question, #displayFinal {
+    color: #1976D2; /* Royal blue question text color */
+}
+
+label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+
+
+#finalPage {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 75%;
+}
+
+
+
+#save-btn, #home-btn {
+    background-color: #1976D2; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#start-btn:hover, #save-btn:hover, #home-btn:hover {
+    background-color: #0f4aa9; 
+}

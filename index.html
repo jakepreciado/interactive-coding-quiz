@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Interactive Coding Quiz!</title>
+    </head>
+    <body>
+        <header id="hiScore"></header>
+        <div id="quizHome">
+            <h1>Welcome to the Interactive Coding Quiz</h1>
+            <p>
+                Test your knowledge on JavaScript. Play through this interactive game to see how much you know about the scripting language. 
+                Once you hit the "Start" button a timer will begin. With every question you answer incorrectly, time will be deducted from you.
+                Contrary, your correct answers will grant you an extra 5 seconds! Once you are finished, your remaining time will be your score. The player with the highest score is the WINNER! Have fun!
+            </p>
+            <button id="start-btn">START</button>
+        </div>  
+
+        <section id="testingPage" class="hide container">
+            <h2 id="question"></h2>
+            <form id="answerForm" class="container">
+                <label>
+                  <input type="radio" name="answer" value="A"> <span id="answerA"></span>
+                </label>
+                <label>
+                  <input type="radio" name="answer" value="B"> <span id="answerB"></span>
+                </label>
+                <label> 
+                  <input type="radio" name="answer" value="C"> <span id="answerC"></span>
+                </label>
+                <label>
+                  <input type="radio" name="answer" value="D"> <span id="answerD"></span>
+                </label>
+            </form>
+            <button id="submit-btn">Submit Answer</button>          
+            <div id="timer"></div>           
+        </section>
+
+        <section id=finalPage class="hide">
+            <h1>TIMES UP! Your final score:</h1>
+            <h2 id="displayFinal"></h2>
+            <div>
+                <button id="save-btn">Save Score</button>
+                <button id="home-btn">Home</button>
+            </div>
+        </section>
+    </body>
+    <script src="./assets/js/script.js"></script>
+</html>
