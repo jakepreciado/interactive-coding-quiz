@@ -14,6 +14,7 @@ var answerD = document.getElementById('answerD');
 var answerForm = document.getElementById('answerForm');
 var hiScore = document.getElementById('hiScore');
 var displayFinal = document.getElementById('displayFinal');
+var userInitials = document.getElementById('initials');
 
 
 var userScore = 0;
@@ -206,16 +207,19 @@ function endQuiz() {
 }
 
 // saves score to local storage for data persistence
-function saveScore() {
+function saveScore(initials) {
     userScore = time;
+    var initials = userInitials.value;
     localStorage.setItem('userScore', userScore);
-    hiScore.textContent = ('Hi-Score: ' + userScore);
-    console.log('Saved successfully.')
+    localStorage.setItem('userInitials', initials);
+    hiScore.textContent = ('Hi-Score: ' + userScore + ' ' + initials);
+    console.log('Saved successfully.');
 }
 
 function loadScore() {
     userScore = localStorage.getItem('userScore');
-    hiScore.textContent = ('Hi-Score: ' + userScore);
+    initials = localStorage.getItem('userInitials');
+    hiScore.textContent = ('Hi-Score: ' + userScore + ' by ' + initials);
 }
 
 
