@@ -1,8 +1,5 @@
 # interactive-coding-quiz
-This project is an interactive coding quiz that uses logic from JavaScript to dynamically update the 
-html page, receive and respond to user input, and stores persistent data locally to the browser. Users can 
-test their knowledge of the script language and save their scores for progress checking, and competing with 
-their peers!
+This project is an interactive coding quiz that leverages JavaScript logic to dynamically modify the HTML page, interact with user input, and store data persistently in the user's browser. It provides users with an opportunity to evaluate their understanding of JavaScript and allows them to save their scores to track their progress and compete with others.
 
 ### User Story
 ```md
@@ -26,3 +23,10 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 ```
+## Examples
+
+<img src="./assets/images/home-page.jpg" alt="quiz homepage">
+
+<img src="./assets/images/answer-feedback.jpg" alt="quiz homepage">
+
+<img src="./assets/imagessaved-score.jpg" alt="quiz homepage">
