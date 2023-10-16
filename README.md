@@ -29,4 +29,4 @@ THEN I can save my initials and score
 
 <img src="./assets/images/answer-feedback.jpg" alt="quiz homepage">
 
-<img src="./assets/imagessaved-score.jpg" alt="quiz homepage">
+<img src="./assets/images/saved-score.jpg" alt="quiz homepage">
