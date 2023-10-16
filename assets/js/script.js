@@ -146,6 +146,7 @@ function startTimer() {
 }
 
 function getQuestion() {
+    // Ends quiz if time is out OR questions are all complete
     if (answeredQuestions.length === 10 || time <= 0) {
         console.log('End');
         clearInterval(countdown); 
@@ -153,6 +154,7 @@ function getQuestion() {
         return time;
     }
 
+    // generates a question from the array at random
     var randomQuestion = Math.floor(Math.random() * questions.length);
     newQuestion = questions[randomQuestion];
     console.log(newQuestion);
@@ -168,6 +170,7 @@ function getQuestion() {
     console.log(answeredQuestions)
 }
 
+// Submits the answer and verifies if correct
 function submitAnswer() {
     var choice = document.querySelector('input[name="answer"]:checked');
     if (!choice) {
@@ -202,6 +205,7 @@ function endQuiz() {
     displayFinal.textContent = userScore;
 }
 
+// saves score to local storage for data persistence
 function saveScore() {
     userScore = time;
     localStorage.setItem('userScore', userScore);
@@ -214,6 +218,9 @@ function loadScore() {
     hiScore.textContent = ('Hi-Score: ' + userScore);
 }
 
+
+// event listeners
+
 startBtn.addEventListener('click', () => {
     startTimer(60);
     beginQuiz();
@@ -225,4 +232,5 @@ saveBtn.addEventListener('click', saveScore);
 homeBtn.addEventListener('click', () => {
     location.reload();
 })
+// reloads the same score
 window.addEventListener('load', loadScore)
