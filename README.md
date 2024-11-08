@@ -33,4 +33,4 @@ THEN I can save my initials and score
 
 ## Link
 
-A link to the deployed site: https://jmpre28.github.io/interactive-coding-quiz/
+A link to the deployed site: https://jakepreciado.github.io/interactive-coding-quiz/
